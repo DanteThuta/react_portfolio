@@ -1,3 +1,119 @@
-#App{
-    background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --color-bg: #38524f;
+  --color-bg-variant: #142b29;
+  --color-main: #3497c2;
+  --color-main-variant: rgba(5, 67, 146, 0.8);
+  --color-white: #fff;
+  --color-light: #d1cfcf;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-white);
+  background: var(--color-bg);
+  background-image: url(./img/coldbg.jpg);
+  background-size: cover;
+
+  line-height: 1.7;
+}
+
+/* ***GENERAL STYLES*** */
+/* ==================== */
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+}
+
+section > h2,
+section > h5 {
+  color: var(--color-light);
+  text-align: center;
+}
+
+section > h2 {
+  margin-bottom: 2rem;
+}
+
+.text-light {
+  color: var(--color-white);
+}
+
+a {
+  color: var(--color-main);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  color: var(--color-main);
+
+  border: 1px solid var(--color-main);
+  border-radius: 0.4rem;
+  transition: var(--transition);
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+
+  border-color: transparent;
+}
+
+.btn-primary {
+  background: var(--color-main);
+  color: var(--color-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
