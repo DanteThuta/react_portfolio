@@ -56,6 +56,52 @@ header {
   background: linear-gradient(var(--color-main), transparent);
   width: 22rem;
   height: 30rem;
+
   position: absolute;
-  left: calc(50%- 11rem);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8rem;
+  padding: 7rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+}
+
+/* Media Screens */
+
+/* for Table Screens */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+    background-color: red;
+  }
+
+  section {
+    margin-top: 8rem;
+  }
+
+  .me {
+    margin-top: 3rem;
+  }
+}
+
+/* for Smallar Screens*/
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+    background-color: blue;
+  }
+
+  .me {
+    margin-top: 3rem;
+  }
+
+  section > h2 {
+    margin-top: 2rem;
+  }
+
+  .header_socials {
+    display: none;
+  }
 }

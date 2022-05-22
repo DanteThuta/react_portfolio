@@ -65,6 +65,7 @@ h1 {
 
 section {
   margin-top: 8rem;
+  height: 100vh;
 }
 
 section > h2,
@@ -117,4 +118,30 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+/* Media Screens */
+
+/* for Table Screens */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 8rem;
+  }
+}
+
+/* for Smallar Screens*/
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section > h2 {
+    margin-top: 2rem;
+  }
 }
