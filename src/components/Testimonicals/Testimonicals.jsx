@@ -1,10 +1,12 @@
-import React from 'react'
-import './testmonicals.css'
+import React from "react";
+import "./testmonicals.css";
 
 const Testimonicals = () => {
   return (
-    <div>Testimonicals</div>
-  )
-}
+    <div>
+      <h1>Testimonicals</h1>
+    </div>
+  );
+};
 
-export default Testimonicals
+export default Testimonicals;

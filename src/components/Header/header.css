@@ -1,0 +1,61 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header__container {
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+/* CTA Section */
+
+.cta {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+
+  margin-top: 2rem;
+}
+
+/* Header_Socials Section */
+
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  position: absolute;
+  left: 0rem;
+  bottom: 2rem;
+}
+
+.header_socials::after {
+  content: "";
+  width: 2px;
+  height: 2rem;
+  background-color: var(--color-main);
+  margin-left: 0.5rem;
+}
+
+/* Scroll Down Section */
+
+.scroll__down {
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+
+  transform: rotate(90deg);
+}
+
+/* Me Image Section */
+
+.me {
+  background: linear-gradient(var(--color-main), transparent);
+  width: 22rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50%- 11rem);
+}

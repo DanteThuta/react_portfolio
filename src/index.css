@@ -35,8 +35,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--color-white);
   background: var(--color-bg);
-  background-image: url(./img/coldbg.jpg);
-  background-size: cover;
+  background-image: url(./assets/bg-texture.png);
+  /* background-size: cover; */
+  object-fit: cover;
 
   line-height: 1.7;
 }
