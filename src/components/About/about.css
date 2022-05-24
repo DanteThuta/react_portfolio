@@ -1,0 +1,126 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+/* About Image Section */
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-main),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.about__meimage {
+  border-radius: 2rem;
+  overflow: hidden;
+
+  transition: var(--transition);
+}
+
+.about__meimage:hover {
+  transform: rotate(10deg);
+}
+
+/* About Content Section */
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about__card {
+  background: var(--color-main);
+  border-radius: 2rem;
+
+  padding: 1rem 1.5rem;
+
+  text-align: center;
+  color: var(--color-light);
+}
+
+.about__card:hover {
+  background: var(--color-main-variant);
+  border: 1px solid var(--color-white);
+
+  color: var(--color-white);
+}
+
+.about__icons {
+  font-size: 1.5rem;
+}
+
+.about__card h5 {
+  font-size: 0.9rem;
+}
+
+.about__card small {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.about__content {
+  text-align: center;
+}
+
+.about__content p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Media Screens */
+
+/* for Table Screens */
+
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__me {
+    width: 50%;
+    margin: 1rem auto 2rem;
+  }
+
+  .about__card {
+    padding: 1rem 1rem;
+  }
+
+  .about__content p {
+    margin-bottom: 2rem;
+  }
+}
+
+/* for Smallar Screens*/
+
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content a {
+    margin: 1rem auto 2rem;
+  }
+}
