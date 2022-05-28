@@ -34,7 +34,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-white);
-  background: var(--color-bg);
+  background: var(--color-main-variant);
   background-image: url(./assets/bg-texture.png);
   /* background-size: cover; */
   object-fit: cover;
