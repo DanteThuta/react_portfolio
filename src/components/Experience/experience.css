@@ -38,3 +38,43 @@
 .experience__details-icon {
   color: var(--color-main);
 }
+
+/* Media Screens */
+
+/* for Table Screens */
+
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__container > div {
+    width: 100%;
+    /* padding: 2rem; */
+    margin: 0 auto;
+  }
+  .experience__content {
+    padding: 1rem;
+  }
+}
+
+/* for Smallar Screens*/
+
+@media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+  }
+
+  .experience__container > div {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .experience__container > div h3 {
+    margin-top: 2rem;
+  }
+
+  .experience__content {
+    padding-right: 3rem;
+  }
+}
