@@ -82,6 +82,10 @@ section > h2 {
   color: var(--color-white);
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   color: var(--color-main);
   transition: var(--transition);
