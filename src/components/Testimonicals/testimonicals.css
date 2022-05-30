@@ -44,6 +44,10 @@
 }
 
 /* Swiper JS Section */
+
+.swiper-pagination {
+  padding-bottom: 0.5rem;
+}
 .swiper-pagination-clickable .swiper-pagination-bullet-active {
   background-color: var(--color-main);
 }
