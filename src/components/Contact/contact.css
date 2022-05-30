@@ -85,6 +85,6 @@ textarea {
   .contact__container {
     grid-template-columns: 1fr;
 
-    padding: 1rem auto;
+    width: var(--container-width-sm);
   }
 }
