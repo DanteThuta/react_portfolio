@@ -40,7 +40,7 @@ const About = () => {
             dolorem asperiores vel quidem animi doloribus aspernatur maiores
             doloremque odio dignissimos consequatur ducimus voluptatibus?
           </p>
-          <a href="" className="btn btn-primary about-btn">
+          <a href="" className="btn btn-primary">
             Let's Talk
           </a>
         </div>

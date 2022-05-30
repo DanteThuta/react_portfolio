@@ -42,13 +42,16 @@
 }
 
 .about__card {
-  background: var(--color-main);
+  background: var(--color-bg);
+  border: 1px solid var(--color-main-variant);
   border-radius: 2rem;
 
   padding: 1rem 1.5rem;
 
   text-align: center;
   color: var(--color-light);
+
+  transition: var(--transition);
 }
 
 .about__card:hover {

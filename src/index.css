@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-  --color-bg: #38524f;
-  --color-bg-variant: #142b29;
-  --color-main: #3497c2;
-  --color-main-variant: rgba(5, 67, 146, 0.8);
+  --color-bg: #1a1b2f;
+  --color-bg-variant: #52575d;
+
+  --color-main: #e33e5a;
+  --color-main-variant: #ff1c42;
   --color-white: #fff;
   --color-light: #d1cfcf;
+
+  --color-btn: #9852f9;
 
   --transition: all 400ms ease;
 
@@ -34,7 +37,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-white);
-  background: var(--color-main-variant);
+  background: var(--color-bg);
   background-image: url(./assets/bg-texture.png);
   /* background-size: cover; */
   object-fit: cover;
@@ -96,10 +99,11 @@ a:hover {
 }
 
 .btn {
-  padding: 0.75rem 1rem;
-  color: var(--color-main);
+  padding: 1rem 1.5rem;
+  color: var(--color-white);
+  background: var(--color-main);
 
-  border: 1px solid var(--color-main);
+  /* border: 1px solid var(--color-main); */
   border-radius: 0.4rem;
   transition: var(--transition);
 
@@ -114,7 +118,7 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--color-main-variant);
+  background: var(--color-btn);
   color: var(--color-white);
 }
 

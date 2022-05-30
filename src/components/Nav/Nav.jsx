@@ -6,6 +6,7 @@ import {
   AiOutlineUser,
   AiOutlineBook,
   AiOutlineCustomerService,
+  AiOutlineOrderedList,
   AiOutlineMessage,
 } from "react-icons/ai";
 import { useState } from "react";
@@ -30,15 +31,34 @@ const Nav = () => {
         {" "}
         <AiOutlineUser />
       </a>
-      <a href="#experience">
-        {" "}
+      <a
+        href="#experience"
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
+      >
         <AiOutlineBook />
       </a>
-      <a href="#service">
+      <a
+        href="#service"
+        onClick={() => setActiveNav("#service")}
+        className={activeNav === "#service" ? "active" : ""}
+      >
         {" "}
         <AiOutlineCustomerService />
       </a>
-      <a href="#contact">
+      <a
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
+      >
+        {" "}
+        <AiOutlineOrderedList />
+      </a>
+      <a
+        href="#contact"
+        onClick={() => setActiveNav("#contact")}
+        className={activeNav === "#contact" ? "active" : ""}
+      >
         {" "}
         <AiOutlineMessage />
       </a>
